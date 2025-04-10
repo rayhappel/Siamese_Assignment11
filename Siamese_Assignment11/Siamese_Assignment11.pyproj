@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>439679e1-3cf1-46b1-bfd9-0fe9cf7e9bab</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Siamese_Assignment11.py</StartupFile>
+    <StartupFile>mainPackage\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,10 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Siamese_Assignment11.py" />
+    <Compile Include="mainPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainPackage\main.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataPackage\" />
+    <Folder Include="mainPackage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataPackage\fuelPurchaseData.csv" />
