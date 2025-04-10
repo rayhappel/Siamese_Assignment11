@@ -25,10 +25,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
+    <Compile Include="Utililities\Util.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utililities\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataPackage\" />
     <Folder Include="mainPackage\" />
+    <Folder Include="Utililities\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataPackage\fuelPurchaseData.csv" />
