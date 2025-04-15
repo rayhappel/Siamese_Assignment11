@@ -21,24 +21,31 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DataCleaner\DataCleaner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataCleaner\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
-    <Compile Include="Utililities\Util.py">
+    <Compile Include="DataProcessor\Processor.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Utililities\__init__.py">
+    <Compile Include="DataProcessor\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataPackage\" />
+    <Folder Include="DataCleaner\" />
+    <Folder Include="Data\" />
     <Folder Include="mainPackage\" />
-    <Folder Include="Utililities\" />
+    <Folder Include="DataProcessor\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataPackage\fuelPurchaseData.csv" />
+    <Content Include="Data\fuelPurchaseData.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
